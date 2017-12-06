@@ -1,6 +1,7 @@
 import voluptuous as vol
 from homeassistant.components.switch import SwitchDevice, PLATFORM_SCHEMA
-from homeassistant.const import (CONF_NAME, CONF_HOST, CONF_USERNAME, CONF_PASSWORD, CONF_ID)
+from homeassistant.const import (
+    CONF_NAME, CONF_HOST, CONF_USERNAME, CONF_PASSWORD, CONF_ID)
 import homeassistant.helpers.config_validation as cv
 from . import pytuya
 
