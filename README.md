@@ -6,6 +6,8 @@ Most devices that use the Tuya cloud should work. If port 6668 is open on the de
 
 switch id is if the device has multiple switches, the switch number.
 
+See here for how to find localKey and devId: https://github.com/codetheweb/tuyapi/blob/master/docs/SETUP.md
+
 Config Fields:
 ```
 switch:
