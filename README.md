@@ -1,3 +1,5 @@
+# tuya-homeassistant
+
 This is a simple platform to control **SOME** devices that use the Tuya cloud for control.
 
 It uses a slightly modified version of the pytuya library (https://github.com/clach04/python-tuya) to directly control the device.
@@ -7,6 +9,8 @@ Most devices that use the Tuya cloud should work. If port 6668 is open on the de
 switch id is if the device has multiple switches, the switch number.
 
 See here for how to find localKey and devId: https://github.com/codetheweb/tuyapi/blob/master/docs/SETUP.md
+
+To use, copy contents of the directory tuya-homeassistant to "<home assistant config dir>/custom_components/switch" and add config below to configuration.yaml
 
 Config Fields:
 ```
