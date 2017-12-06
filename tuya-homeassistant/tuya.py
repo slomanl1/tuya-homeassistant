@@ -1,6 +1,18 @@
-from homeassistant.components.switch import SwitchDevice
+import voluptuous as vol
+from homeassistant.components.switch import SwitchDevice, PLATFORM_SCHEMA
 from homeassistant.const import (CONF_NAME, CONF_HOST, CONF_USERNAME, CONF_PASSWORD, CONF_ID)
+import homeassistant.helpers.config_validation as cv
 from . import pytuya
+
+DEFAULT_ID = 1
+
+PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
+    vol.Required(CONF_NAME): cv.string,
+    vol.Required(CONF_HOST): cv.string,
+    vol.Required(CONF_USERNAME): cv.string,
+    vol.Required(CONF_PASSWORD): cv.string,
+    vol.Optional(CONF_ID, default=DEFAULT_ID): cv.string,
+})
 
 def setup_platform(hass, config, add_devices, discovery_info=None):
 
