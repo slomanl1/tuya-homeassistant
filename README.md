@@ -10,7 +10,7 @@ Most switch devices that use the Tuya cloud should work. If port 6668 is open on
 
 switch id is if the switch device has multiple switches, the switch number.
 
-See here for how to find localKey and devId: https://github.com/codetheweb/tuyapi/blob/master/docs/SETUP.md
+See here for how to find localKey and devId: http://seandev.org/tuyainst
 
 To use, copy tuya.py to "<home assistant config dir>/custom_components/switch" and add config below to configuration.yaml
 
