@@ -1,5 +1,7 @@
 # tuya-homeassistant
 
+**THIS WILL ONLY WORK FOR SWITCHES. WILL NOT WORK WITH DIMMERS.**
+
 This is a simple platform to control **SOME** switch devices that use the Tuya cloud for control.
 
 It uses a slightly modified version of the pytuya library (https://github.com/clach04/python-tuya) to directly control the switch device.
