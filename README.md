@@ -10,7 +10,7 @@ switch id is if the device has multiple switches, the switch number.
 
 See here for how to find localKey and devId: https://github.com/codetheweb/tuyapi/blob/master/docs/SETUP.md
 
-To use, copy contents of the directory tuya-homeassistant to "<home assistant config dir>/custom_components/switch" and add config below to configuration.yaml
+To use, copy tuya.py to "<home assistant config dir>/custom_components/switch" and add config below to configuration.yaml
 
 Config Fields:
 ```
@@ -18,9 +18,9 @@ switch:
   - platform: tuya
     name: //switch name
     host: //ip of device
-    password: //localKey
-    username: //devId
-    id: //switch id. if only one switch, use 1
+    local_key: //localKey
+    device_id: //devId
+    id: //switch id. leave blank if only one switch
 ```
 
 Example:
@@ -29,7 +29,7 @@ switch:
   - platform: tuya
     name: Switch
     host: xxx.xxx.xxx.xxx
-    password: xxxxxxxxxxxxxxxx
-    username: xxxxxxxxxxxxxxxxxxxx
+    local_key: xxxxxxxxxxxxxxxx
+    device_id: xxxxxxxxxxxxxxxxxxxx
     id: 1
 ```
